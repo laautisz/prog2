@@ -10,40 +10,49 @@
 <header>
   <h1>Currículum</h1>
   <nav>
-    <a href="datos-personales.html">Datos</a>
-    <a href="contacto-redes.html">Contacto</a>
-    <a href="idiomas-intereses.html">Idiomas</a>
-    <a href="sobre-mi.html">Sobre mí</a>
-    <a href="experiencia-habilidades.html">Experiencia</a>
-    <a href="educacion-cursos.html">Educación</a>
-    <a href="portfolio.html">Portfolio</a>
+    <ul class="menu">
+      <li><a href="datos-personales.html">Datos</a></li>
+      <li><a href="contacto-redes.html">Contacto</a></li>
+      <li><a href="idiomas-intereses.html">Idiomas</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="experiencia-habilidades.html">Experiencia</a></li>
+      <li><a href="educacion-cursos.html">Educación</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
   </nav>
 </header>
 
-<main>
-  <h2>Contacto</h2>
-  <p>Email: lautaro.ocanto@itecriocuarto.org.ar</p>
-  <p>Telefono: 3584373599</p>
-
-  <h3>Redes</h3>
-  <a href="https://www.instagram.com/lauti_ocanto/" target="_blank">
+<main class="contenedor">
+  <h2 class="titulo-seccion">Contacto y redes</h2>
+  <ul class="lista">
+  <li>Email: lautaro.ocanto@itecriocuarto.org.ar</li>
+  <li>Telefono: 3584373599</li>
+    <li><a href="https://www.instagram.com/lauti_ocanto/" target="_blank">
     Instagram
-  </a>
+  </a></li>
 
   <h2>¿Trabajamos juntos?</h2>
 
-  <form>
-    <label for="nombre">Nombre:</label><br>
-    <input type="text" id="nombre" name="nombre"><br><br>
+<form class="formulario">
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br><br>
+  <div class="campo">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" class="input">
+  </div>
 
-    <label for="mensaje">Mensaje:</label><br>
-    <textarea id="mensaje" name="mensaje" rows="4" cols="30"></textarea><br><br>
+  <div class="campo">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" class="input">
+  </div>
 
-    <button type="submit">Enviar</button>
-  </form>
+  <div class="campo">
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" class="input"></textarea>
+  </div>
+
+  <button type="submit" class="boton">Enviar</button>
+
+</form>
 </main>
 
 <footer>
