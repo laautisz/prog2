@@ -1,26 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --color-principal: #3b82f6;
+  --color-secundario: #2563eb;
+  --color-fondo: #e0ecff;
+  --color-blanco: #ffffff;
+  --color-suave: #f5f7ff;
+  --color-texto: #1e293b;
+  --color-borde: #ccc;
+  --color-hover-claro: #dbeafe;
+  --color-linea: #93c5fd;
+
+  --borde-radio: 10px;
+  --espaciado: 15px;
+}
+
 body {
-    background-color: #e0ecff;
-    color: #1e293b;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
   }
   .contenedor {
     width: 80%;
     margin: 30px auto;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 2px solid #3b82f6;
+    background-color: var(--color-blanco);
+    border-radius: var(--borde-radio);
+    border: 2px solid var(--color-principal);
   }
   
   header {
-    background-color: #3b82f6;
+    background-color: var(--color-principal);
     color: white;
     padding: 15px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
   }
   
   .menu {
@@ -32,18 +50,19 @@ body {
 
   .menu a {
     text-decoration: none;
-    color: white;
+    color: var(--color-blanco);
   }
   .menu a:hover {
-    color: #dbeafe;
+    color: var(--color-hover-claro);
   }
 
   .titulo-seccion {
     font-size: 28px;
     margin-bottom: 15px;
-    color: #2563eb;
-    border-bottom: 2px solid #93c5fd;
+    color: var(--color-secundario);
+    border-bottom: 2px solid var(--color-linea);
     padding-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .lista {
@@ -53,32 +72,32 @@ body {
 
   .lista li {
     margin-bottom: 8px;
-    border-left: 3px solid #3b82f6;
     padding-left: 8px;
   }
 
   .tarjeta {
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 10px;
+    border-radius: var(--borde-radio);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
 
   .tarjeta h3 {
-    color: #2563eb;
+    color: var(--color-secundario);
+    font-family: 'Poppins', sans-serif;
   }
 
   .boton {
     text-decoration: none;
-    background-color: #3b82f6;
-    color: white;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
     padding: 8px 12px;
     border-radius: 6px;
   }
 
   .boton:hover {
-    background-color: #2563eb;
+    background-color: var(--color-secundario);
   }
 
   .formulario {
@@ -89,7 +108,7 @@ body {
 
   .input {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-borde);
     border-radius: 5px;
     width: 100%;
   }
@@ -110,8 +129,8 @@ body {
   
   .habilidad {
     padding: 10px;
-    border-radius: 10px;
-    background-color: #f5f7ff;
+    border-radius: var(--borde-radio);
+    background-color: var(--color-suave);
     text-align: center;
     transition: 0.3s;
     width: 120px;
@@ -119,7 +138,7 @@ body {
   }
   
   .habilidad:hover {
-    background-color: #e0ecff;
+    background-color: var(--color-fondo);
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
   }
@@ -136,8 +155,8 @@ body {
   }
   
   footer {
-    background-color: #3b82f6;
-    color: white;
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
     text-align: center;
     padding: 15px;
     margin-top: 30px;
