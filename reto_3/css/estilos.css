@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
+    padding: 30px;
   }
 
   .menu {
@@ -66,9 +66,10 @@ body {
   
   .card-producto {
     background-color: var(--color-blanco);
-    width: 360px;
+    width: 580px;
     padding: 20px;
     border-radius: 8px;
+    line-height: 2;
   }
   
   .card-producto img {
@@ -83,6 +84,7 @@ body {
     color: var(--color-blanco);
     text-align: center;
     padding: 12px;
+    margin-top: 20px;
     text-decoration: none;
   }
   
@@ -95,13 +97,19 @@ body {
   }
   
   .beneficios article {
-    width: 260px;
+    width: 500px;
     text-align: center;
   }
   
   .beneficios img {
     width: 120px;
+    margin-bottom: 20px;
   }
+
+  .beneficios p {
+    text-align: left;
+    margin-top: 20px;
+}
   
   .menciones {
     padding: 10px;
@@ -122,7 +130,7 @@ body {
 }
   
   .card-mencion {
-    width: 260px;
+    width: 400px;
     background-color: var(--color-blanco);
     box-shadow: 0 0 15px #999;
     border-radius: 8px;
@@ -132,12 +140,18 @@ body {
     width: 100%;
     height: 140px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 4px;
+    margin-bottom: 20px
   }
   
   .card-mencion h3,
   .card-mencion p {
     padding: 10px;
+  }
+
+  .card-mencion p{
+    font-size: 15px;
+    margin-bottom: 20px;
   }
   
   footer {
