@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-primario: #7acc2d;
+  --color-fondo: #eeeeee;
+  --color-texto: #313337;
+  --color-blanco: #ffffff;
+  --fuente-principal: 'Roboto', sans-serif;
+}
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SISTEMA DE GRILLA */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  color: var(--color-texto);
+}
+
+header {
+  background-color: var(--color-primario);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-texto);
+}
+
+.hero {
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero h2 {
+  max-width: 850px;
+  font-size: 32px;
+}
+
+.productos {
+  background-image: url("../img/curve.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 120px 40px;
+  flex-wrap: wrap;
+}
+
+.card-producto {
+  background-color: var(--color-blanco);
+  width: 580px;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 2;
+}
+
+.card-producto img {
+  width: 180px;
+  display: block;
+  margin: auto;
+}
+
+.card-producto a {
+  display: block;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: 12px;
+  margin-top: 20px;
+  text-decoration: none;
+
+  transition: background-color 0.3s ease,
+              transform 0.3s ease;
+}
+
+.card-producto a:hover {
+  background-color: #67b826;
+  transform: translateY(1px);
+}
+
+/* BENEFICIOS */
+
+.beneficios {
+  padding: 120px 0;
+}
+
+.beneficio {
+  text-align: center;
+  padding: 20px;
+
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.beneficio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.beneficios img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.beneficios p {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.menciones {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.menciones h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contenedor-menciones {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.card-mencion {
+  width: 400px;
+  background-color: var(--color-blanco);
+  box-shadow: 0 0 15px #999;
+  border-radius: 8px;
+}
+
+.card-mencion img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.card-mencion h3,
+.card-mencion p {
+  padding: 10px;
+}
+
+.card-mencion p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: var(--color-texto);
+  color: var(--color-blanco);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    width: calc(33.333% - 14px);
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 24px;
+  }
+
+  .card-producto {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
